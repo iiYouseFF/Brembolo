@@ -1,6 +1,5 @@
 const SignUpBTN1 = document.getElementById("btn");
 const SignUpBTN2 = document.getElementById("btn-2");
-const p = document.getElementById("UserName");
 const H = document.getElementById("H");
 const Products = document.getElementById("P");
 const S = document.getElementById("S");
@@ -42,10 +41,8 @@ const flag = localStorage.getItem("flag")
 if (flag == "loggedin"){
     SignUpBTN1.style.display = "none"
     SignUpBTN2.style.display = "none"
-    p.textContent = `${localStorage.getItem("UN")}`
 }
 if (flag != "loggedin") {
-    p.style.display = "none"
     SignUpBTN1.style.display = "none"
     SignUpBTN2.style.display = "none"
 }
