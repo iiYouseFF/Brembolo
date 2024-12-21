@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Products.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="container-fluid py-3">
+            <div class="row">
+                <div class="inner col-4 offset-4 text-center">
+                    <h1 class="text-light">Brembolo</h1>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation Bar -->
+        <nav class="container-fluid" id="Nav">
+            <div class="row">
+                <div class="inner col-12 position-relative py-4">
+                    <ul class="d-flex justify-content-center align-items-center" id="list">
+                        <li><a href="index.html" id="H">Home</a></li>
+                        <li><a href="Products.html" id="P">Products</a></li>
+                        <li><a href="Services.html" id="S">Services</a></li>
+                        <li><a href="contact.html" id="C">Contact</a></li>
+                        <li><p id="UserName"></p></li>
+                    </ul>
+                    <button class="btn position-absolute translate-middle-y" id="btn">
+                        SignUp
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container mt-3">
+                <div class="cards row" id="cards">
+                    <div class="card">
+                        <img src="../images/Products/img1.jpg" alt="">
+                        <h3>Product Name</h3>
+                        <p id="description">Product description</p>
+                        <p id="Price">Product Price</p>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="container-fluid py-3">
+            <div class="row">
+                <div class="inner col-4 offset-4 text-center">
+                    <h1 class="text-light">Brembolo</h1>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation Bar -->
+        <nav class="container-fluid" id="Nav">
+            <div class="row">
+                <div class="inner col-12 position-relative py-4">
+                    <ul class="d-flex justify-content-center align-items-center" id="list">
+                        <li><a href="index.html" class="" id="H">Home</a></li>
+                        <li><a href="Products.html" class="" id="P">Products</a></li>
+                        <li><a href="Services.html" class="" id="S">Services</a></li>
+                        <li><a href="contact.html" class="" id="C">Contact</a></li>
+                        <li><p id="UserName"></p></li>
+                    </ul>
+                    <button class="btn position-absolute translate-middle-y" id="btn">
+                        SignUp
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="form text-center">
+                <form action="">
+                        <div class="form-group position-relative">
+                            <input type="text" placeholder="" class="form-control" id="N">
+                            <label for="N" class="position-absolute label">Name</label>
+                        </div>
+                        <div class="form-group position-relative">
+                            <input type="email" placeholder="" class="form-control" id="email">
+                            <label for="email" class="position-absolute label">Email</label>
+                        </div>
+                        <div class="form-group position-relative">
+                            <input type="text" placeholder="" class="form-control" id="M">
+                            <label for="M" class="position-absolute label">Messege</label>
+                        </div>
+                        <button class="button" id="Send">
+                            Send
+                        </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

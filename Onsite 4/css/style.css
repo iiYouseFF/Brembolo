@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+header{
+    background-color: #031716;
+}
+header h1{
+    font-family: "Orbitron" , sans-serif;
+}
+#Nav{
+    background-color: #03312F;
+}
+#list{
+    list-style: none;
+    gap: 40px;
+}
+#list li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Orbitron" , sans-serif;
+    font-size: 25px;
+    position: relative;
+    z-index: 0;
+    padding: 5px 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+#list li a:hover , .active{
+    color: #031716;
+    background-color: #0C959B;
+    transition: all 0.3s ease;
+}
+#btn{
+    background-color: #0C959B;
+    top: 50%;
+    right: 50px;
+    font-family: "Orbitron" , sans-serif;
+    background: #0C959B;
+    border: none;
+    z-index: 1;
+    transition: all 0.3s ease;
+    border: solid #0C959B 2px;
+}
+#btn:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0B7176;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+#btn:hover {
+    color: #fff;
+}
+#btn:hover:after {
+    left: 0;
+    width: 100%;
+}
+#btn-2{
+    background-color: #0C959B;
+    font-family: "Orbitron" , sans-serif;
+    background: #0C959B;
+    transition: all 0.3s ease;
+    border: solid #0C959B 2px;
+}
+#btn-2:hover{
+    color: #fff;
+}
+
+#quote{
+    font-family: "Orbitron" , sans-serif;
+    font-size: 35px;
+}
+.images img{
+    width: calc((100% / 3) - 1rem );
+    border-radius: 12px;
+}
+#UserName{
+    z-index: 1000;
+    font-family: "Orbitron" , sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 0;
+}
