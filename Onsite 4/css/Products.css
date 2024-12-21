@@ -39,3 +39,21 @@
     border: 2px solid #0C959B;
     transition: all 0.3s;
 }
+@media (max-width : 1080px){
+    .card{
+        width: calc(50% - 20px);
+    }
+    .card img{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media (max-width : 756px){
+    .card{
+        width: 100%;
+    }
+    .card img{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
