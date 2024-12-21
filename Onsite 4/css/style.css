@@ -88,3 +88,12 @@ header h1{
     margin-bottom: 0;
 }
 
+@media (max-width : 746px){
+    #list{
+        gap: 10px;
+    }
+    #list li a{
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+}

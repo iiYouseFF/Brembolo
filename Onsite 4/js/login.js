@@ -109,45 +109,58 @@ RegisterBTN.addEventListener("click" , ()=>{
         CPW.style.borderColor = "rgba(214, 22, 22, 0.76)";
     }
 })
-let testUNL = false;
-let testPWL = false;
-UNL.addEventListener("keyup" , ()=>{
-    const UNS = localStorage.getItem("UN");
-    if (UNL.value == UNS) {
-        UNL.style.borderColor = "rgba(1, 182, 1, 0.712)";
-        testUNL = true;
-    }
-    if (UNL.value != UNS) {
-        UNL.style.borderColor = "rgba(214, 22, 22, 0.76)";
-        testUNL = false;
-    }
-    if (UNL.value.length == 0){
-        UNL.style.borderColor = "#0C959B";
-        testUNL = false
-    }
-})
-PWL.addEventListener("keyup" , ()=>{
-    const PWS = localStorage.getItem("PW");
-    if (PWL.value == PWS) {
-        PWL.style.borderColor = "rgba(1, 182, 1, 0.712)";
-        testPWL = true;
-    }
-    if (PWL.value != PWS) {
-        PWL.style.borderColor = "rgba(214, 22, 22, 0.76)";
-        testPWL = false;
-    }
-    if (PWL.value.length == 0){
-        PWL.style.borderColor = "#0C959B";
-        testPWL = false
-    }
-})
+// let testUNL = false;
+// let testPWL = false;
+// UNL.addEventListener("keyup" , ()=>{
+//     const UNS = localStorage.getItem("UN");
+//     if (UNL.value == UNS) {
+//         UNL.style.borderColor = "rgba(1, 182, 1, 0.712)";
+//         testUNL = true;
+//     }
+//     if (UNL.value != UNS) {
+//         UNL.style.borderColor = "rgba(214, 22, 22, 0.76)";
+//         testUNL = false;
+//     }
+//     if (UNL.value.length == 0){
+//         UNL.style.borderColor = "#0C959B";
+//         testUNL = false
+//     }
+// })
+// PWL.addEventListener("keyup" , ()=>{
+//     const PWS = localStorage.getItem("PW");
+//     if (PWL.value == PWS) {
+//         PWL.style.borderColor = "rgba(1, 182, 1, 0.712)";
+//         testPWL = true;
+//     }
+//     if (PWL.value != PWS) {
+//         PWL.style.borderColor = "rgba(214, 22, 22, 0.76)";
+//         testPWL = false;
+//     }
+//     if (PWL.value.length == 0){
+//         PWL.style.borderColor = "#0C959B";
+//         testPWL = false
+//     }
+// })
+// localStorage.removeItem("flag")
+// LoginBTN.addEventListener("click" , ()=>{
+//     if (testUNL == true && testPWL == true){
+//         localStorage.setItem("flag" , "loggedin")
+//         window.location.href = "../HTML/index.html"
+//     }
+//     if (testUNL == false || testPWL == false) {
+//         UNL.style.borderColor = "rgba(214, 22, 22, 0.76)";
+//         PWL.style.borderColor = "rgba(214, 22, 22, 0.76)";
+//     }
+// })
 localStorage.removeItem("flag")
 LoginBTN.addEventListener("click" , ()=>{
-    if (testUNL == true && testPWL == true){
+    if (UNL.value == localStorage.getItem("UN") && PWL.value == localStorage.getItem("PW")){
+        UNL.style.borderColor = "rgba(1, 182, 1, 0.712)";
+        PWL.style.borderColor = "rgba(1, 182, 1, 0.712)";
         localStorage.setItem("flag" , "loggedin")
         window.location.href = "../HTML/index.html"
     }
-    if (testUNL == false || testPWL == false) {
+    if (UNL.value != localStorage.getItem("UN") || PWL.value != localStorage.getItem("PW")) {
         UNL.style.borderColor = "rgba(214, 22, 22, 0.76)";
         PWL.style.borderColor = "rgba(214, 22, 22, 0.76)";
     }

@@ -141,3 +141,18 @@ section{
         width: 80%;
     }
 }
+@media (max-width : 746px){
+    .content{
+        gap: 100px;
+    }
+    .content .form-control{
+        width: 100%;
+    }
+    .content .Register  button , .content .Login  button{
+        width: 100%;
+        font-size: 10px;
+    }
+    .label{
+        font-size: 12px;
+    }
+}
